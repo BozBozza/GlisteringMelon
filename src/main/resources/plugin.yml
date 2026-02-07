@@ -1,0 +1,4 @@
+name: GlisteringMelon
+version: '1.0'
+main: org.vanillacraft.glisteringMelon.GlisteringMelon
+api-version: '1.21.11'
