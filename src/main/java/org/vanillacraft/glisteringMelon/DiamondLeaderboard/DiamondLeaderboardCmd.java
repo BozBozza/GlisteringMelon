@@ -6,6 +6,8 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
+import org.vanillacraft.glisteringMelon.GlisteringMelon;
+import org.vanillacraft.glisteringMelon.Important.GlobalVariables;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -34,6 +36,7 @@ public class DiamondLeaderboardCmd {
         //for (int i = 0; i < leaderboardMsg.size(); i++) {
         //    message = message.append(Component.text(leaderboardMsg.get(i)));
         //}
+        GlisteringMelon.plugin.getLogger().info(GlobalVariables.playerDiamonds.toString() );
         ctx.getSource().getSender().sendMessage(leaderboardMsg);
         return Command.SINGLE_SUCCESS;
     }

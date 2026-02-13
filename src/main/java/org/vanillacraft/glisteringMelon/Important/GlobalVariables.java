@@ -11,5 +11,5 @@ public class GlobalVariables {
     public static int highestBidAmount = 0;
     public static String highestBidPlayer = "";
     public static HashMap<UUID, Integer> playerDiamonds = new HashMap<>();
-    public static Component leaderboardMsg;
+    public static Component leaderboardMsg = Component.empty();
 }
